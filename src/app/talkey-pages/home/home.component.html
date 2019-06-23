@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h4>
+                    Volume de oportunidades
+                </h4>
+                <!--                 <ngx-charts-bar-horizontal class="chart-container" [scheme]="colorScheme" [schemeType]="schemeType" [results]="single" [gradient]="gradient"
+                [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel"
+                [tooltipDisabled]="tooltipDisabled" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [showGridLines]="showGridLines"
+                [barPadding]="20" [roundDomains]="roundDomains"></ngx-charts-bar-horizontal> -->
+                <div *ngIf="chart">
+                    <canvas id="canvas">{{ chart }}</canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4>
+                    Tempo Médio de Ligações (Minutos)
+                </h4>
+                <div *ngIf="chartTempoMedio">
+                    <canvas id="canvasTempoMedio">{{ chartTempoMedio }}</canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4>
+                    Palavras mais utilizadas em ligações de sucesso
+                </h4>
+
+                <div id="nuvemPalavras" style="width:100%;height:500px">
+                    <canvas id="word_cloud" class="word_cloud"></canvas>
+                </div>                
+            </div>
+        </div>
+
+    </div>
+</div>

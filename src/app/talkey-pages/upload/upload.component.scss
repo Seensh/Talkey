@@ -1,0 +1,36 @@
+.card {
+    .card-body {
+        h4 {
+            display: inline-block;
+        }
+
+        .gridEnvios {
+            .btnCriarLote {
+                float: right;
+                margin-bottom: 10px;
+            }
+        }
+
+        .criarLote {
+            .btnVoltar {
+                float: right;
+                margin-bottom: 10px;
+            }
+
+            form {
+                .btnSalvar {
+                    float: right;
+                }
+
+                .my-drop-zone {
+                    border: dotted 2px #dadada;
+                }
+
+                .nv-file-over {
+                    border: dotted 2px green;
+                }
+            }
+        }
+
+    }
+}
